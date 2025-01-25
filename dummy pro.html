@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Landing Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url(con.jpg);
+            color:whitesmoke;
+        }
+        header {
+            background-color: #007BFF;
+            color: black;
+            padding: 20px 10px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        header p {
+            margin: 5px 0 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 10px;
+        }
+        .countdown {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .countdown div {
+            display: inline-block;
+            margin: 0 15px;
+        }
+        .countdown span {
+            display: block;
+            font-size: 2em;
+            font-weight: bold;
+        }
+        .details, .speakers, .registration {
+            margin-bottom: 40px;
+        }
+        .details p, .speakers p {
+            margin: 5px 0;
+        }
+        .speakers {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .speaker {
+            text-align: center;
+            background: black;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .speaker h3 {
+            margin: 10px 0 5px;
+        }
+        .registration form {
+            background: black;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        .registration form input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid ;
+            border-radius: 5px;
+        }
+        .registration form a {
+            width: 100px;
+            text-decoration: none;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+        footer {
+            text-align: center;
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 0;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>MARIANA CONCERT 2025</h1>
+        <p>JOIN US FOR A NIGHT FULL OF MELODY!!!</p>
+    </header>
+
+    <div class="container">
+        <div class="countdown">
+            <h2>Event Countdown</h2>
+            <div>
+                <span id="days">10</span>
+                DAYS TO GO!!!
+            </div>
+        </div>
+        <div class="details">
+            <h2>Event Details</h2>
+            <p><strong>Date:</strong> Saturday, February 15, 2025</p>
+            <p><strong>Time:</strong> 9:00 PM - 1:00 AM</p>
+            <p><strong>Location:</strong> Maha Laxmi Race Course (Mumbai)</p><br>
+            <p><strong>Ticket fares: </strong><br><br>Diljit Dosanjh:<strong>5000/-</strong></p><br>
+            Darshan Raval:<strong>4500/-</strong><br><br>
+            Shreya Ghoshal:<strong>6500/-</strong><br><br>
+            Arijit Singh:<strong>7500/-</strong>
+
+
+        </div>
+
+    
+        <div class="speakers">
+            <h2>SINGERS:</h2>
+            <div class="speaker">
+                <h3>DILJIT DOSANJH</h3>
+                <img src="DD.jpg" width="200px">
+                <p>Popular Punjabi Singer</p>
+            </div>
+            <div class="speaker">
+                <h3>DARSHAN RAVAL</h3>
+                <img src="Darshan.jpg" width="200px">
+                <p>Renowned Singer</p>
+            </div>
+            <div class="speaker">
+                <h3>SHREYA GHOSHAL</h3>
+                <img src="shreya-ghoshal.jpg" width="200px">
+                <p>Popular Bollywood Singer</p>
+            </div>
+            <div>
+                <div class="speaker">
+                    <h4>ARIJIT SINGH</h4>
+                    <img src="Arijit-Singh.png" width="200px">
+                    <p>Popular Bollywood singer</p>
+                </div>
+            </div>
+        </div>
+        <div class="registration">
+            <h2>Register Now</h2>
+            <form>
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email Address" >
+                <input type="number" placeholder="contact number">
+                <a href="pay.html">Proceed to Payment</a>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; MARIANA CONCERT 2025. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

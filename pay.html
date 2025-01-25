@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proceed to Payment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #007BFF;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .container {
+            max-width: 600px;
+            margin: 40px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            color: #007BFF;
+            margin-bottom: 20px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input {
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+        button {
+            padding: 15px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .summary {
+            margin-bottom: 20px;
+            padding: 15px;
+            background: #f1f1f1;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Proceed to Payment</h1>
+    </header>
+
+    <div class="container">
+        <h2>Payment Details</h2>
+
+        <div class="summary">
+            <p><strong>Event:</strong> Mariana Concert 2025</p>
+            <p><strong>Date:</strong> February 15, 2025</p>
+            <p><strong>Total Amount:</strong> ₹7500</p>
+        </div>
+
+        <form>
+            <label for="card-number">Card Number</label>
+            <input type="text" id="card-number" placeholder="Enter your card number">
+
+            <label for="card-name">Cardholder Name</label>
+            <input type="text" id="card-name" placeholder="Enter name as on card">
+
+            <label for="expiry-date">Expiry Date</label>
+            <input type="month" id="expiry-date">
+
+            <label for="cvv">CVV</label>
+            <input type="password" id="cvv" placeholder="Enter CVV">
+
+            <button type="submit">Make Payment</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; Mariana Concert 2025. All rights reserved.</p>
+    </footer>
+</body>
+</html>

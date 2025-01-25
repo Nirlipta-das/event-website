@@ -1,0 +1,15 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #292929;
+}
+
+section {
+    height:500px;
+    width: 400px;
+    border: 1px solid white;
+    border-radius: 20px;
+}
